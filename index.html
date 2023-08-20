@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Levis's interactive rating component</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/Assets/styles/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    </head>
+
+    <body>
+        <div class="rating-card">
+            <div class="rc-body-pre-click" id="rc-body-pre-click">
+                <div class="icon-container">
+                    <img src="/Assets/images/icon-star.svg">
+                </div>
+    
+                <h1>How did we do?</h1>
+    
+                <p>
+                    Please let us know how we did with your support request. All feedback is  appreciated to help us improve our offering.
+                </p>
+                <div class="buttons-container">
+                    <button class="rating-btn1" id="rating-btn1">1</button>
+                    <button class="rating-btn2" id="rating-btn2">2</button>
+                    <button class="rating-btn3" id="rating-btn3">3</button>
+                    <button class="rating-btn4" id="rating-btn4">4</button>
+                    <button class="rating-btn5" id="rating-btn5">5</button>
+                </div>
+                
+                <button class="submit-btn" id="submit-btn">Submit</button>
+      
+            </div>
+
+            <div class="rc-body-post-click animate__animated animate__bounce" id="rc-body-post-click">
+                <div class="illustration-cont">
+                    <img src="/Assets/images/illustration-thank-you.svg">
+                </div>
+
+                <div class="choice-info-cont">
+                    <div class="choice-info-subcont">
+                        <p>You selected <span id="rating-text"></span> out  of 5</p>
+                    </div>
+                </div>
+
+                <div class="thanks-cont">
+                    <h1>Thank you!</h1>
+                </div>
+
+                <p class="closing-remarks">
+                    We appreciate you taking your time to give a rating. If you ever need more support, don't hesitate to get in touch!
+                </p>
+
+            </div>
+        </div>
+        
+
+        <script src="script.js"></script>
+    </body>
+</html>

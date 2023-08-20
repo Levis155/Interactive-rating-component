@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%)
+}
+body{
+    background-color: var(--Very-Dark-Blue);
+    font-family: "Overpass";
+}
+.rating-card{
+    background-color: var(--Dark-Blue);
+    height: 320px;
+    width: 25%;
+    position: absolute;
+    top: 20%;
+    left: 37.5%;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+.rc-body-pre-click-invisible{
+    display: none;
+}
+.icon-container{
+    background-color: var(--Very-Dark-Blue);
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.25rem;
+}
+.icon-container img{
+    height: 50%;
+    width: 50%;
+}
+.rc-body-pre-click h1{
+    margin-top: 1.5rem;
+    color: var(--White);
+}
+.rc-body-pre-click p{
+    margin-top: 1rem;
+    max-width: 20rem;
+    color: var(--Medium-Grey);
+}
+.buttons-container{
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.rating-btn1, .rating-btn2, .rating-btn3, .rating-btn4, .rating-btn5{
+    background-color: var(--Very-Dark-Blue);
+    color: var(--Medium-Grey);
+    cursor: pointer;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 1.5rem;
+    border-style: none;
+}
+
+.rating-btn1:hover, .rating-btn2:hover, .rating-btn3:hover, .rating-btn4:hover, .rating-btn5:hover{
+    background-color: var(--Light-Grey);
+    color: var(--White);
+}
+.rating-btn-clicked{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+.rating-btn-clicked:hover{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+.submit-btn{
+    background-color: var(--Orange);
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 2rem;
+    border-style: none;
+    color: var(--White);
+    font-size: 1rem;
+    cursor: pointer;
+}
+.submit-btn:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+.rc-body-post-click{
+    display: none;
+}
+.rc-body-post-click-visible{
+    display: block;
+}
+.illustration-cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.choice-info-cont{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+.choice-info-subcont{
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+    border-radius: 1rem;
+}
+.choice-info-subcont p{
+    font-size: 1rem;
+    color: var(--Orange);
+}
+.thanks-cont{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.thanks-cont h1{
+    color: var(--White);
+}
+
+.closing-remarks{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--Medium-Grey);
+}
+@media screen and (max-width: 1260px) {
+    .rating-card{
+        width: 30%;
+        left: 28%;
+    }
+}
+@media screen and (max-width: 1055px) {
+    .rating-card{
+        width: 35%;
+        left: 25.5%;
+    }
+}
+@media screen and (max-width: 905px) {
+    .rating-card{
+        width: 40%;
+        left: 23%;
+    }
+}
+@media screen and (max-width: 790px) {
+    .rating-card{
+        width: 45%;
+        left: 20.5%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .rating-card{
+        width: 50%;
+        left: 18%;
+    }
+}
+@media screen and (max-width: 635px) {
+    .rating-card{
+        width: 55%;
+        left: 15.5%;
+    }
+}
+@media screen and (max-width: 575px) {
+    .rating-card{
+        width: 60%;
+        left: 13%;
+    }
+}
+@media screen and (max-width: 530px) {
+    .rating-card{
+        width: 65%;
+        left: 10.5%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .rating-card{
+        width: 70%;
+        left: 7%;
+    }
+}
+    
